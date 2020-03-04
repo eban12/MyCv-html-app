@@ -24,12 +24,16 @@
     </table>
     <hr>
 
-    <h3>Contact Us ..</h3>
-    <table>
+    <table cellspacing=20px>
         <tr>
             <td>
                 <form>
-                    <table>
+                    <table cellspacing=20px>
+                        <tr>
+                            <td>
+                                <h3>Contact Us ..</h3>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <label for="fName">First Name</label>
@@ -82,6 +86,39 @@
                         </tr>
                     </table>
                 </form>
+            </td>
+
+            <td>
+                <table>
+                    <tr>
+                        <td>My Address</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=Addis%20Ababa%20university&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                        href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 500px;
+                                        width: 600px;
+                                    }
+
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 600px;
+                                    }
+                                </style>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
