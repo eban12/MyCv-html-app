@@ -48,7 +48,8 @@
                                 <label for="fName">First Name</label>
                             </td>
                             <td>
-                                <input type="text" name="fName" id="fName" required pattern="[A-Za-z]+">
+                                <input type="text" name="fName" id="fName" required pattern="[A-Za-z]+"
+                                title="Should only be letters!">
                             </td>
                         </tr>
                         <tr>
@@ -56,7 +57,8 @@
                                 <label for="lName">Last Name</label>
                             </td>
                             <td>
-                                <input type="text" name="lName" id="fName" required pattern="[A-Za-z]+">
+                                <input type="text" name="lName" id="fName" required pattern="[A-Za-z]+"
+                                title="Should only be letters!">
                             </td>
                         </tr>
                         <tr>
@@ -64,15 +66,17 @@
                                 <label for="email">Email</label>
                             </td>
                             <td>
-                                <input type="email" name="email" id="email" required>
+                                <input type="email" name="email" id="email" required
+                                title="Enter Valid Email!">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="phone">Phone(with country code)</label>
+                                <label for="phone">Phone</label>
                             </td>
                             <td>
-                                <input type="tel" name="phone" id="phone" required pattern="[+][0-9]{10,12}">
+                                <input type="tel" name="phone" id="phone" required pattern="[+][0-9]{10,12}" 
+                                title="Should start with country code">
                             </td>
                         </tr>
                         <tr>
@@ -95,7 +99,15 @@
                                 <textarea name="coomment" id="" cols="30" rows="10" required></textarea><br>
                             </td>
                         </tr>
-
+                        <tr>
+                            <td>
+                                <label for="passkey">Password</label>
+                            </td>
+                            <td>
+                                <input type="password" name="passkey" id="passkey" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                                title="Should contain at least one lowercase letter, one uppercase letter, one digit and should be atleast 6 charachters">
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <input type="submit" value="Submit" id="">
@@ -156,9 +168,9 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;</span>
-    <a href="#" target="_blank">facebook |</a>
-    <a href="#" target="_blank">Gmail |</a>
-    <a href="#" target="_blank">linkedin</a>
+    <a href="https://github.com/eban12" target="_blank">Github |</a>
+    <a href="mailto:it.eyob.alemu@gmail.com" target="_blank">Gmail |</a>
+    <a href="https://www.linkedin.com/in/eyob-alemu" target="_blank">linkedin</a>
     <hr>
 </body>
 </html>
