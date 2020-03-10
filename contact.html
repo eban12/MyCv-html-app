@@ -32,13 +32,15 @@
     <!-- Main Content -->
     <table cellspacing=10px>
         <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
             <td>
-                <form>
+                <form action="mailto:it.eyob.alemu@gmail.com">
                     <table cellspacing=10px>
                         <tr>
                             <td>
-                                <h3>Contact Us ..</h3>
+                                <h3>Contact Me ...</h3>
                             </td>
                         </tr>
                         <tr>
@@ -46,7 +48,7 @@
                                 <label for="fName">First Name</label>
                             </td>
                             <td>
-                                <input type="text" name="fName" id="fName" required>
+                                <input type="text" name="fName" id="fName" required pattern="[A-Za-z]+">
                             </td>
                         </tr>
                         <tr>
@@ -54,7 +56,7 @@
                                 <label for="lName">Last Name</label>
                             </td>
                             <td>
-                                <input type="text" name="lName" id="fName" required>
+                                <input type="text" name="lName" id="fName" required pattern="[A-Za-z]+">
                             </td>
                         </tr>
                         <tr>
@@ -67,10 +69,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <label for="phone">Phone</label>
+                                <label for="phone">Phone(with country code)</label>
                             </td>
                             <td>
-                                <input type="tel" name="phone" id="phone" required>
+                                <input type="tel" name="phone" id="phone" required pattern="[+][0-9]{10,12}">
                             </td>
                         </tr>
                         <tr>
@@ -156,7 +158,7 @@
         &nbsp;&nbsp;&nbsp;</span>
     <a href="#" target="_blank">facebook |</a>
     <a href="#" target="_blank">Gmail |</a>
-    <a href="#" target="_blank">linkedin |</a>
+    <a href="#" target="_blank">linkedin</a>
     <hr>
 </body>
 </html>
