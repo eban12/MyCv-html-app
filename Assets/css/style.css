@@ -1,0 +1,71 @@
+/* Element Selectors */
+body {
+    background-color: skyblue;
+    margin: 10px;
+}
+
+header {
+    background-color: rgba(119, 90, 90, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+}
+
+
+section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 30px;
+    position: relative;
+    top: 70px;
+}
+
+article {
+    font-size: 15px;
+    line-height: 15px;
+    text-align: justify;
+}
+
+.title {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* link styles */
+nav ul {
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#top {
+    margin-top: 40px;
+}
+
+img[src="Assets/images/avatar.png"] {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+.main {
+    clear: both;
+    margin-top: 40px;
+}
+

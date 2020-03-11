@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Assets/images/icon.png">
+    <link rel="stylesheet" href="Assets/css/style.css">
     <title>Eyob Alemu</title>
 </head>
 
@@ -17,140 +18,137 @@
     <hr>
 
     <!-- Header -->
-    <table cellspacing=20px>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-            <td><img src="Assets/images/avatar.png" alt="Eyob Alemu Profile Picture"></td>
-            <td>
-                <h1>Eyob Alemu</h1>
-                <h3>IT Student, Addis Ababa Institute of Technology</h3>
-            </td>
-        </tr>
-    </table>
-    <hr>
+    <img src="Assets/images/avatar.png" alt="Eyob Alemu Profile Picture">
+    <h1>Eyob Alemu</h1>
+    <h3>IT Student, Addis Ababa Institute of Technology</h3>
+
 
     <!-- Main Content -->
-    <table cellspacing=10px>
-        <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>
-                <form action="mailto:it.eyob.alemu@gmail.com">
-                    <table cellspacing=10px>
+    <div class="main">
+        <hr>
+        <table cellspacing=10px>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <form action="mailto:it.eyob.alemu@gmail.com">
+                        <table cellspacing=10px>
+                            <tr>
+                                <td>
+                                    <h3>Contact Me ...</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="fName">First Name</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="fName" id="fName" required pattern="[A-Za-z]+"
+                                        title="Should only be letters!">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="lName">Last Name</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="lName" id="fName" required pattern="[A-Za-z]+"
+                                        title="Should only be letters!">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email</label>
+                                </td>
+                                <td>
+                                    <input type="email" name="email" id="email" required title="Enter Valid Email!">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="phone">Phone</label>
+                                </td>
+                                <td>
+                                    <input type="tel" name="phone" id="phone" required pattern="[+][0-9]{10,12}"
+                                        title="Should start with country code">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Country:</label>
+                                </td>
+                                <td>
+                                    <select name="Country" id="" required>
+                                        <option value="am">America</option>
+                                        <option value="af">Africa</option>
+                                        <option value="eu">Europe</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="comment">Comment</label><br>
+                                </td>
+                                <td>
+                                    <textarea name="coomment" id="" cols="30" rows="10" required></textarea><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="passkey">Password</label>
+                                </td>
+                                <td>
+                                    <input type="password" name="passkey" id="passkey" required
+                                        pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                                        title="Should contain at least one lowercase letter, one uppercase letter, one digit and should be atleast 6 charachters">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Submit" id="">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <table>
                         <tr>
-                            <td>
-                                <h3>Contact Me ...</h3>
-                            </td>
+                            <td>My Address</td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="fName">First Name</label>
-                            </td>
-                            <td>
-                                <input type="text" name="fName" id="fName" required pattern="[A-Za-z]+"
-                                title="Should only be letters!">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="lName">Last Name</label>
-                            </td>
-                            <td>
-                                <input type="text" name="lName" id="fName" required pattern="[A-Za-z]+"
-                                title="Should only be letters!">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="email">Email</label>
-                            </td>
-                            <td>
-                                <input type="email" name="email" id="email" required
-                                title="Enter Valid Email!">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="phone">Phone</label>
-                            </td>
-                            <td>
-                                <input type="tel" name="phone" id="phone" required pattern="[+][0-9]{10,12}" 
-                                title="Should start with country code">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="">Country:</label>
-                            </td>
-                            <td>
-                                <select name="Country" id="" required>
-                                    <option value="am">America</option>
-                                    <option value="af">Africa</option>
-                                    <option value="eu">Europe</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="comment">Comment</label><br>
-                            </td>
-                            <td>
-                                <textarea name="coomment" id="" cols="30" rows="10" required></textarea><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="passkey">Password</label>
-                            </td>
-                            <td>
-                                <input type="password" name="passkey" id="passkey" required pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}"
-                                title="Should contain at least one lowercase letter, one uppercase letter, one digit and should be atleast 6 charachters">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="submit" value="Submit" id="">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                                            src="https://maps.google.com/maps?q=Addis%20Ababa%20university&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                            href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 500px;
+                                            width: 600px;
+                                        }
+
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            height: 500px;
+                                            width: 600px;
+                                        }
+                                    </style>
+                                </div>
                             </td>
                         </tr>
                     </table>
-                </form>
-            </td>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-            <td>
-                <table>
-                    <tr>
-                        <td>My Address</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="mapouter">
-                                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
-                                        src="https://maps.google.com/maps?q=Addis%20Ababa%20university&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                        href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
-                                <style>
-                                    .mapouter {
-                                        position: relative;
-                                        text-align: right;
-                                        height: 500px;
-                                        width: 600px;
-                                    }
-
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        background: none !important;
-                                        height: 500px;
-                                        width: 600px;
-                                    }
-                                </style>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <!-- Footer -->
     <hr>
@@ -173,4 +171,5 @@
     <a href="https://www.linkedin.com/in/eyob-alemu" target="_blank">linkedin</a>
     <hr>
 </body>
+
 </html>
