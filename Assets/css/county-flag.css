@@ -1,0 +1,81 @@
+/* resets and box-sizing */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* grid */
+
+.row {
+    display: flex;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66% }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66% }
+.col-12 { width: 100%; }
+
+aside {
+    height: 100%;
+    background-color: #3d3d3d;
+    padding: 2rem 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+aside li {
+    padding: .5em;
+    background-color: #6b6969;
+    border-radius: 5px;
+    margin: 1px .4em;
+}
+
+aside a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+aside li:hover {
+    background-color: #3b3838;
+}
+
+.main-content {
+    position: absolute;
+    right: 0;
+}
+
+.flag-container {
+    width: 80%;
+    border: #3d3d3d 1px solid;
+    margin: 2em auto;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.flag-size {
+    width: 600px;
+    height: 500px;
+    margin: auto;
+}
+
+.micronesia {
+    background-color: #75B2DD;
+}
+
