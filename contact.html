@@ -10,78 +10,94 @@
 </head>
 
 <body>
-    <!-- Nav bar -->
-    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    <a href="index.html">Home |</a>
-    <a href="contact.html">Contact |</a>
-    <a href="gallery.html">Gallery</a>
-
-    <!-- Header -->
-    <img src="Assets/images/avatar.png" alt="Eyob Alemu Profile Picture">
-    <h1>Eyob Alemu</h1>
-    <h3>IT Student, Addis Ababa Institute of Technology</h3>
-
-
-    <!-- Main Content -->
-    <div class="main">
-    
-                    <form action="mailto:it.eyob.alemu@gmail.com">
-                                    <h3>Contact Me ...</h3>
-                                    <label for="fName">First Name</label>
-                                    <input type="text" name="fName" id="fName" required pattern="[A-Za-z]+"
-                                        title="Should only be letters!">
-                                    <label for="lName">Last Name</label>
-                                    <input type="text" name="lName" id="fName" required pattern="[A-Za-z]+"
-                                        title="Should only be letters!">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" required title="Enter Valid Email!">
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" name="phone" id="phone" required pattern="[+][0-9]{10,12}"
-                                        title="Should start with country code">
-                                    <label for="">Country:</label>
-                                    <select name="Country" id="" required>
-                                        <option value="am">America</option>
-                                        <option value="af">Africa</option>
-                                        <option value="eu">Europe</option>
-                                    </select>
-                                    <label for="comment">Comment</label><br>
-                                    <textarea name="coomment" id="" cols="30" rows="10" required></textarea><br>
-                                    <label for="passkey">Password</label>
-                                    <input type="password" name="passkey" id="passkey" required
-                                        pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}"
-                                        title="Should contain at least one lowercase letter, one uppercase letter, one digit and should be atleast 6 charachters">
-                                    <input type="submit" value="Submit" id="">
-                    </form>
-                    
-                    My Address
-                    <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=Addis%20Ababa%20university&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                                href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
-                        <style>
-                            .mapouter {
-                                position: relative;
-                                text-align: right;
-                                height: 500px;
-                                width: 600px;
-                            }
-
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none !important;
-                                height: 500px;
-                                width: 600px;
-                            }
-                        </style>
+    <div class="container">
+        <header>
+            <!-- Nav bar -->
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="Assets/images/avatar.png" alt="Eyob Alemu Profile Picture" class="pro-pic">
+                        </div>
+                        <div class="col-8 intro">
+                            <h1>Eyob Alemu</h1>
+                            <h3>IT Student, Addis Ababa Institute of Technology</h3>
+                        </div>
                     </div>
-    </div>
+                </div>
+                <div class="col-6">
+                    <nav class="primary-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="gallery.html">Blog</a></li>
+                            <li><a href="gallery.html">My Works</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-    <!-- Footer -->
-    <p>Developed by Eyob Alemu &copy;2020</p>
-    <a href="https://github.com/eban12" target="_blank">Github |</a>
-    <a href="mailto:it.eyob.alemu@gmail.com" target="_blank">Gmail |</a>
-    <a href="https://www.linkedin.com/in/eyob-alemu" target="_blank">linkedin</a>
+        <!-- Main Content -->
+        <div class="main">
+
+            <form action="mailto:it.eyob.alemu@gmail.com">
+                <h3>Contact Me ...</h3>
+                <label for="fName">First Name</label>
+                <input type="text" name="fName" id="fName" required pattern="[A-Za-z]+" title="Should only be letters!">
+                <label for="lName">Last Name</label>
+                <input type="text" name="lName" id="fName" required pattern="[A-Za-z]+" title="Should only be letters!">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required title="Enter Valid Email!">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" required pattern="[+][0-9]{10,12}"
+                    title="Should start with country code">
+                <label for="">Country:</label>
+                <select name="Country" id="" required>
+                    <option value="am">America</option>
+                    <option value="af">Africa</option>
+                    <option value="eu">Europe</option>
+                </select>
+                <label for="comment">Comment</label><br>
+                <textarea name="coomment" id="" cols="30" rows="10" required></textarea><br>
+                <label for="passkey">Password</label>
+                <input type="password" name="passkey" id="passkey" required
+                    pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                    title="Should contain at least one lowercase letter, one uppercase letter, one digit and should be atleast 6 charachters">
+                <input type="submit" value="Submit" id="">
+            </form>
+
+            My Address
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Addis%20Ababa%20university&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 500px;
+                        width: 600px;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 500px;
+                        width: 600px;
+                    }
+                </style>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <p>Developed by Eyob Alemu &copy;2020</p>
+        <a href="https://github.com/eban12" target="_blank">Github |</a>
+        <a href="mailto:it.eyob.alemu@gmail.com" target="_blank">Gmail |</a>
+        <a href="https://www.linkedin.com/in/eyob-alemu" target="_blank">linkedin</a>
+    </div>
 </body>
 
 </html>
