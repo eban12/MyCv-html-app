@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/css/style.css">
-    <title>Eyob Alemu / Blog</title>
+    <title>Eyob Alemu-blog</title>
     </style>
 </head>
 
@@ -31,7 +31,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="gallery.html">My Works</a></li>
+                            <li><a href="myworks.html">My Works</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                         </ul>
                     </nav>
@@ -45,92 +45,128 @@
                 <div class="col-10">
                     <section id="top">
                         <h3 class="title">
-                            My first post
+                            Why it matters to use relative size values
                         </h3>
                         <article>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>
+                                CSS provides different ways of specifing element sizes such as px, pt, em, rem  and %. The first two (px, pt) are 
+                                the so called fixed values, meaning they don't change from device to device they are always the same values. Where as the last three (em, rem and %),
+                                relative values that will be calculated from a base size, if a base size is not specified the base size would be the browser default for the htm tag which is 
+                                usually 16px. 
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>
+                                With all these different ways of specifing size people have their own preference and reasons for their preferences. Some say its better to use relative ones and
+                                others prefer the fixed. Those who prefer using fixed size values choose fixed oens because they let programmers have more control over how the elements are gonna  be
+                                rendered despite the kind of browser or device used to access the pages. On the other hand one of the reasons behind relative units preference is due to the fact that there
+                                are different kinds of screen sizes and usersalso have their own preferences when it comes to viewing a pege as they want it to. 
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>
+                                As I put it clearly on the title I also prefer using relative size values rather than fixed oens. And my reason is also quite similar to what I mentioned above. People or users of websites 
+                                may have different sorts of preferences. Some may like their fonts bigger some may like it really small it all depends on the users. And I believe, as web designer and programmer, we have to design
+                                products which can accomodate the needs and preferences of users. The problem with fixed values is that they don't give room for these users preferences. Once we set an elementto have a size value of 
+                                certain pixel, say 40px, it is always gonna have 40px no matter how the users preference settings are. But when it comes to relative sizes, since they are based on certain base value, usually the html tag,
+                                the elements conform to the users preferences. 
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>
+                                One counter argument when it comes to preferences is that, users can use the <em>Zoom</em> option rather than changing their preferences in the settings. But the problem I see with is by saying useoen thing and not the 
+                                other we are sort of forcing people to do certain things. Therfore, my counter argument to this is, why don't we let users have both options. With fixed size values we are taking away their ability to set their preference
+                                once and never have to change again. On the other hand by using relative size values we can design our pages the way we want them to look on the standard settings and the users will have both the options of either zooming in and out or 
+                                change their setting to make things look the way they want them to. 
+                            </p>
+                            <p>
+                                All that being said, I do agree on one place where it's super useful and important to use fixed values and that is margins and paddings. These properties could be little bit trickier when relative values are used, so knowing the exact amount 
+                                of space that would be rendered between elements is something I believe is important for the design. But other than that I do believe relative size values are important in designs.
                             </p>
                         </article>
                         <p class="date">
-                            March 11, 2020 : 2:00pm
+                            March 19, 2020 : 8:05pm
                         </p>
                     </section>
-                </div>
-                <div class="col-1 hide-mobile"></div>
-            </div>
-            <div class="row">
-                <div class="col-1 hide-mobile"></div>
-                <div class="col-10">
+        
                     <section id="top">
                         <h3 class="title">
-                            My first post
+                            Pixels in Browser.
                         </h3>
                         <article>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>Pixels are the smallest component or dot that can be controlled in digital imaging, but in browsers that is not true.
+                                Screen resolutions have increased a lot over the years and most devices come with more pixels crammed in place of what used to hold one pixel.
+                                Due to this fact a browser does not use actual image pixels to represent pixels if it did, it would be really hard to see elements with out magnifying them
+                                or using really huge numbers which may turn out to be hidious to calculate and even think about.
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>
+                                <em>So how does the browser interpret the so called <strong>px</strong> sizes then?</em> 
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>
+                                When we specify sizes in <strong>px</strong> unit the browser uses whats known as <em>reference pixel</em>. The reference pixel is standardized pixel value 
+                                measured at arm's length. At a distanceof 28 inches a reference pixel has an equivalent value of 1/96 inches or 0.26 mm. 
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>
+                                Based on the above information a 200px width value, for example, will be interpreted as the value <br> <em>200 * 0.22 mm</em> from a distance of 28 inches or 71 cm.
                             </p>
+                            <p><em>NB: reference pixel may also be known as CSS pixel.</em></p>
                         </article>
                         <p class="date">
-                            March 11, 2020 : 2:00pm
+                            March 19, 2020 : 8:54pm
                         </p>
                     </section>
-                </div>
-                <div class="col-1 hide-mobile"></div>
-            </div>
-            <div class="row">
-                <div class="col-1 hide-mobile"></div>
-                <div class="col-10">
+            
                     <section id="top">
                         <h3 class="title">
-                            My first post
+                            What's New in CSS3 ?
                         </h3>
                         <article>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
+                            <p>
+                                With CSS3 being the latest evolution of the Cascading Style Sheets language, it has introduced some new 
+                                features and extended on some of the existing ones.
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum accusantium nihil
-                                repellat
-                                ipsum, cupiditate pariatur maiores tempora saepe reiciendis debitis fuga adipisci odio.
-                            </p>
+                            <ol>
+                                <li>
+                                    <p>
+                                        It has extended the css selectors by addding atribut selectors such as 
+                                        <ul>
+                                            <li><p><em>element[attr$=val]</em> : to match any element with attribute ending with <em>val</em></p></li>
+                                            <li><p><em>element[attr^=val]</em> : to match any element with attribute starting with <em>val</em></p></li>
+                                            <li><p><em>element[attr*=val]</em> : to match any element with attribute having <em>val</em> anywhere</p></li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Also it included pseudo-classes such as <em>:root</em>, <em>:last-child</em> and <em>:target</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        The color module has been extended to include 147 more keyword colors and also introduced new ways of declaring color values
+                                        such as : <em>rgba()</em>, <em>hsl()</em> and <em>hsla()</em>
+                                    </p>
+                                    <p>In CSS2 hex code and rgb() were used to declare color values, in CSS3 with rgba() and hlsa() we can also specify alpha value 
+                                        which is a valueto determine the transparency of the color.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        The <em>border-radius</em>, <em>box-shadow</em>, <em>text-shadow</em>, <em>linear-gradient</em>, <em>radial-gradient</em>
+                                        properties got introduced in CSS3.
+                                    </p>
+                                    <p>
+                                        Before CSS3, to create text shadows and border shadows an image or duplicating the element and positioning it were used.  
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Being able to give multiple background images for an element also made possible in CSS3.
+                                        This removed the need to include an element for every background image, we can just add 
+                                        multiple images as needed.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Media queries are also new features introduced in CSS3. Media queries lets us to create responsive
+                                        web pages. With mobile device usage increasing, media query is an important feature in modern web technology.
+                                    </p>
+                                </li>
+                            </ol>
                         </article>
                         <p class="date">
-                            March 11, 2020 : 2:00pm
+                            March 19, 2020 : 2:26pm
                         </p>
                     </section>
                 </div>
