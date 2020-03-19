@@ -23,6 +23,11 @@ h3 {
     border-bottom: 1px solid #979797;
 }
 
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(41, 40, 40);
+    font-size: 1.2em;
+}
 
 /* grid */
 
@@ -111,7 +116,7 @@ footer {
     color: #fff;
 }
 
-footer li a {
+footer li a, footer p {
     color: #fff;
 }
 
@@ -259,6 +264,21 @@ footer div:first-child {
 
 footer {
     clear: both;
+}
+
+/* my works */
+
+.work-container {
+    text-align: center;
+}
+
+.work-container a {
+    display: inline-block;
+    text-decoration: none; 
+    background-color: rgb(102, 211, 121);
+    padding: 1em 2em;
+    border-radius: 5px;
+    color: #141313;
 }
 
 
