@@ -14,6 +14,15 @@ body {
     margin: 0;
 }
 
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: orangered;
+    border-bottom: 1px solid #979797;
+}
+
 
 /* grid */
 
@@ -139,16 +148,13 @@ footer div:first-child {
     font-size: 1.5em;
 }
 
-.details-container section {
+.details-container section,
+.contact-main{
     padding: 2em 1.5em;
     margin: 5px 0;
     border-bottom: 1px solid #979797;
     background-color: #f0eded;
 }
-
-/* .details-container .top-skills {
-    border-bottom: none;
-} */
 
 .details-container {
     border-bottom: 1px solid #979797;   
@@ -175,7 +181,7 @@ footer div:first-child {
 /* contact page */
 
 .contact-main {
-    border-bottom: 1px solid #979797;
+    margin: 10px;
 }
 
 .input-form {
@@ -187,8 +193,8 @@ footer div:first-child {
     width: 70%;
     padding: 10px;
     border: none;
-    border-bottom: 1px solid #979797;
-    background: #f0eded;
+    border-bottom: 1px solid #5e5c5c;
+    background: #bebbbb;
     border-radius: 4px;
     font-size: 14px;
     display: block;
@@ -214,6 +220,48 @@ footer div:first-child {
     padding: 20px;
 }
 
+/* gallery */
+.name-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: orangered;
+    border-bottom: 1px solid #979797;
+}
+
+/* blog */
+.title {
+    text-align: left;
+    font-weight: 400;
+}
+
+.date {
+    font-style: italic;
+    text-align: right;
+    border-top: 1px solid #979797;
+    padding: 10px;
+}
+
+.image-container {
+    float: left;
+    width: 30%;
+    height: 390px;
+    margin: 1.33%;
+    padding: 1em 0;
+    border-bottom: 1px solid #979797;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    clear: both;
+}
+
+
 /* media queries */
 
 @media only screen and (max-width: 950px) {
@@ -234,6 +282,11 @@ footer div:first-child {
     .btn {
         width: 70%;
         margin: auto;
+    }
+
+    .image-container {
+        width: 42%;
+        margin: 3%;
     }
 
 }
@@ -300,6 +353,19 @@ footer div:first-child {
 
     .top-skills div {
         text-align: center;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .image-container {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 5px;
     }
 }
 

@@ -1,23 +1,15 @@
-header {
-    border-bottom: solid 2px gray;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 20px;
-}
-
-header h3 {
+.name-title {
     text-transform: uppercase;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2rem;
     color: orangered;
+    border-bottom: 1px solid #979797;
 }
 
-main {
+/* main {
     margin: 120px auto;
-}
+} */
 
 .image-container {
     float: left;
@@ -31,8 +23,12 @@ main {
     height: 100%;
 }
 
+footer {
+    clear: both;
+}
+
 @media only screen and (max-width: 600px) {
-    header h3 {
+    h3 {
         font-size: 1.5rem;
 
     }
