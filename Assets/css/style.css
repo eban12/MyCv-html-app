@@ -266,6 +266,12 @@ footer {
     clear: both;
 }
 
+.reference li a {
+    text-decoration: underline;
+    display: inline;
+}
+
+
 /* my works */
 
 .work-container {
@@ -379,7 +385,7 @@ footer {
         font-size: 1.5rem;
         padding: 5px;
     }
-    
+
     .image-container {
         float: none;
         display: block;
