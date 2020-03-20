@@ -271,6 +271,9 @@ footer {
     display: inline;
 }
 
+.post p {
+    line-height: 1.5em;
+}
 
 /* my works */
 
